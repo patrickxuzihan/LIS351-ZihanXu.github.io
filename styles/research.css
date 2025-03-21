@@ -1,0 +1,77 @@
+/* Research main container */
+.research-section {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .research-section h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Basic card styling */
+  .research-intro-card,
+  .research-card,
+  .certificate-card {
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .research-intro-card:hover,
+  .research-card:hover,
+  .certificate-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .research-intro-card h3,
+  .research-card h3,
+  .certificate-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  /* Lists inside cards */
+  .research-card ul,
+  .certificate-card ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .research-card li,
+  .certificate-card li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Link styling inside cards */
+  .certificate-card a {
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  .certificate-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Optional: icon colors/size in headers */
+  .research-card h3 i,
+  .certificate-card h3 i {
+    color: #e78229;
+    margin-right: 5px;
+  }
+
+  body {
+    font-family: "Times New Roman", Georgia, serif;
+    background-color: #fff;
+    color: #333;
+  }

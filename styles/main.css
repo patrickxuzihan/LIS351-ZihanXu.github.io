@@ -1,0 +1,224 @@
+/* ==============================
+   1. 引入 Google Fonts
+   ============================== */
+   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+   /* ==============================
+      2. 全局重置与基础设置
+      ============================== */
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   
+   body {
+     font-family: Arial, sans-serif;
+     background-color: #fff;
+     color: #333;
+   }
+   
+   /* ==============================
+      3. Header 样式
+      ============================== */
+   header {
+     background-color: #f2f2f2; /* 雅白色背景 */
+     padding: 30px 40px;
+   }
+   
+   .header-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+   
+   /* 左侧：LOGO 与名字（纵向排列） */
+   .logo-and-name {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 8px;
+   }
+   
+   /* LOGO 部分使用图片 */
+   .logo {
+     width: 60px;
+     height: 60px;
+   }
+   
+   .logo img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 50%;
+   }
+   
+   .name {
+     font-size: 1.2rem;
+     font-weight: bold;
+     color: #333;
+   }
+   
+   /* ==============================
+      4. 导航菜单样式
+      ============================== */
+   .main-nav > ul {
+     list-style: none;
+     display: flex;
+     gap: 20px;
+   }
+   
+   .main-nav a {
+     text-decoration: none;
+     color: #333;
+     font-family: 'Dancing Script', cursive;
+     font-size: 1.2rem;
+     position: relative;
+     padding: 5px;
+   }
+   
+   .main-nav a:hover {
+     color: #000;
+   }
+   
+   /* ==============================
+      5. 下拉菜单样式及动画
+      ============================== */
+   .dropdown {
+     position: relative;
+   }
+   
+   .dropdown-menu {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #fff;
+     list-style: none;
+     padding: 10px;
+     margin: 0;
+     min-width: 120px;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+     z-index: 99;
+     
+     opacity: 0;
+     pointer-events: none;
+     transition: opacity 0.3s ease;
+   }
+   
+   .dropdown:hover .dropdown-menu {
+     opacity: 1;
+     pointer-events: auto;
+   }
+   
+   .dropdown-menu li {
+     opacity: 0;
+     transform: translateY(-10px);
+     animation: fadeInUp 0.3s ease forwards;
+   }
+   
+   .dropdown:hover .dropdown-menu li {
+     animation: fadeInUp 0.3s ease forwards;
+   }
+   
+   .dropdown-menu li:nth-child(1) {
+     animation-delay: 0.5s;
+   }
+   .dropdown-menu li:nth-child(2) {
+     animation-delay: 1s;
+   }
+   .dropdown-menu li:nth-child(3) {
+     animation-delay: 1.5s;
+   }
+   
+   @keyframes fadeInUp {
+     to {
+       opacity: 1;
+       transform: translateY(0);
+     }
+   }
+   
+   .dropdown-menu li a {
+     display: block;
+     color: #333;
+     padding: 5px 10px;
+     font-family: 'Dancing Script', cursive;
+     font-size: 1.2rem;
+   }
+   
+   .dropdown-menu li a:hover {
+     background-color: #f2f2f2;
+     color: #000;
+   }
+   
+   .arrow {
+     margin-left: 5px;
+     font-size: 0.8em;
+   }
+   
+   /* ==============================
+      6. Intro Section 样式（第一部分内容）
+      ============================== */
+   .intro-section {
+     background-color: #FFFFE0;  /* 更淡的黄色 */
+     padding: 100px 0;           /* 增加垂直内边距，使区域更厚 */
+     width: 100%;
+   }
+   
+   .intro-content {
+     display: flex;
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+   
+   .intro-photo {
+     width: 50%;
+     /* 采用左对齐，稍微靠右一点 */
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     padding-left: 40px;  /* 稍微偏右 */
+   }
+   
+   .intro-photo img {
+     width: 400px;
+     height: 400px;
+     border-radius: 50%;
+     object-fit: cover;
+   }
+   
+   .intro-text {
+     width: 50%;
+     text-align: left;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding-left: 20px;
+     font-size: 1.2rem;
+     color: #333;
+   }
+   
+   /* ==============================
+      7. Footer 样式
+      ============================== */
+   footer {
+     text-align: center;
+     padding: 20px 0;
+     background-color: #fafafa;
+     margin-top: 40px;
+     color: #666;
+     font-size: 0.9rem;
+   }
+
+   .indented-cite {
+    font-style: italic;
+    padding-left: 20px; /* 调整这个值以增加或减少空格 */
+  }
+
+  body {
+    font-family: "Times New Roman", Georgia, serif;
+    background-color: #fff;
+    color: #333;
+  }

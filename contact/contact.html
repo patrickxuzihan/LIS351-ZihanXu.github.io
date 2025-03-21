@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Zihan Xu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Common CSS (header, navigation, etc.) -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- Contact page specific CSS -->
+  <link rel="stylesheet" href="/styles/contact.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-9NyQT4/6nO7rx1ge6iPYMXYQwhpOLj/Qnl/3N8DihVa0QCO5p1dJmU2B5nJjtRzE7PeItLBpC9cTx6S3b3XNCw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Header (same as other pages) -->
+  <header>
+    <div class="header-content">
+      <div class="logo-and-name">
+        <div class="logo">
+          <img src="/images/index-logo.jpg" alt="My Logo">
+        </div>
+        <div class="name">Zihan Xu</div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <!-- Home -->
+          <li><a href="/index.html">Home</a></li>
+  
+          <!-- About Me -->
+          <li><a href="/aboutme/aboutme.html">About Me</a></li>
+  
+          <!-- Contact -->
+          <li><a href="/contact/contact.html">Contact</a></li>
+  
+          <!-- Experience Dropdown (顶层不可点击，href="#") -->
+          <li class="dropdown">
+            <a href="#">
+              Experience <span class="arrow">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/experience/internship/internship.html">Internship</a></li>
+              <li><a href="/experience/research/research.html">Research</a></li>
+            </ul>
+          </li>
+  
+          <!-- Projects Dropdown (顶层不可点击，href="#") -->
+          <li class="dropdown">
+            <a href="#">
+              Projects <span class="arrow">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/project/personal/personalProject.html">Personal</a></li>
+              <li><a href="/project/school/schoolProject.html">School</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Contact Section -->
+  <main>
+    <section class="contact-section">
+      <h2>Get in Touch</h2>
+      <p class="subheading">Feel free to reach out for collaboration, opportunities, or just a friendly hello!</p>
+      <div class="contact-cards">
+        <!-- Card 1: Email -->
+        <div class="contact-card">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email</h3>
+          <p><a href="mailto:patrickxuzihan@gmail.com">patrickxuzihan@gmail.com</a></p>
+          <p><a href="mailto:zxu536@gmail.com">zxu536@gmail.com</a></p>
+        </div>
+        <!-- Card 2: Phone -->
+        <div class="contact-card">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Phone</h3>
+          <p><a href="tel:+16086989638">(608) 698-9638</a></p>
+        </div>
+        <!-- Card 3: GitHub -->
+        <div class="contact-card">
+          <i class="fa-brands fa-github"></i>
+          <h3>GitHub</h3>
+          <p><a href="https://github.com/nonoghs" target="_blank">github.com/nonoghs</a></p>
+        </div>
+        <!-- Card 4: LinkedIn -->
+        <div class="contact-card">
+          <i class="fa-brands fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+          <p><a href="https://www.linkedin.com/in/zihan-xu-04015727b/" target="_blank">linkedin.com/in/zihan-xu</a></p>
+        </div>
+        <!-- Card 5: Social Media -->
+        <div class="contact-card">
+          <i class="fa-solid fa-share-nodes"></i>
+          <h3>Social Media</h3>
+          <p>
+            <a href="https://www.instagram.com/patrick_xuuuuuu/" target="_blank">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+          </p>
+          <p>
+            <a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank">
+              <i class="fa-brands fa-tiktok"></i> Douyin
+            </a>
+          </p>
+          <p>
+            <a href="https://www.xiaohongshu.com/user/profile/5f608d4300000000010003b4" target="_blank">
+              <!-- 这里暂时使用一个心形图标作为小红书的占位图标，你可以自行更换为合适的图标 -->
+              <i class="fa-solid fa-heart"></i> XiaoHongShu
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Zihan Xu. All rights reserved.</p>
+  </footer>
+</body>
+</html>

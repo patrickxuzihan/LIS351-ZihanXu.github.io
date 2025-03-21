@@ -1,0 +1,90 @@
+/* Projects container */
+.projects-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .projects-section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .intro-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Project Grid Layout */
+  .project-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: start;
+  }
+  
+  /* Project Card Styles */
+  .project-card {
+    background-color: #f9f9f9;
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .project-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .date-range {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Bullet points for project tasks */
+  .project-card ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .project-card li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* GitHub link section */
+  .github-section {
+    margin-top: 40px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .github-section a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .github-section a:hover {
+    text-decoration: underline;
+  }
+
+  body {
+    font-family: "Times New Roman", Georgia, serif;
+    background-color: #fff;
+    color: #333;
+  }

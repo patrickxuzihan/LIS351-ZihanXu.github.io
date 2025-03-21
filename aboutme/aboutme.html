@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me | Zihan Xu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 引入通用 CSS 文件（Header、导航等） -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- 引入 About Me 专用 CSS 文件（用于 Z-pattern 布局） -->
+  <link rel="stylesheet" href="/styles/aboutme.css">
+  <!-- 引入 Font Awesome 图标库 -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-9NyQT4/6nO7rx1ge6iPYMXYQwhpOLj/Qnl/3N8DihVa0QCO5p1dJmU2B5nJjtRzE7PeItLBpC9cTx6S3b3XNCw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Header 区域 -->
+  <header>
+    <div class="header-content">
+      <div class="logo-and-name">
+        <div class="logo">
+          <img src="/images/index-logo.jpg" alt="My Logo">
+        </div>
+        <div class="name">Zihan Xu</div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <!-- Home -->
+          <li><a href="/index.html">Home</a></li>
+
+          <!-- About Me -->
+          <li><a href="/aboutme/aboutme.html">About Me</a></li>
+
+          <!-- Contact -->
+          <li><a href="/contact/contact.html">Contact</a></li>
+
+          <!-- Experience Dropdown (顶层不可点击，href="#") -->
+          <li class="dropdown">
+            <a href="#">
+              Experience <span class="arrow">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/experience/internship/internship.html">Internship</a></li>
+              <li><a href="/experience/research/research.html">Research</a></li>
+            </ul>
+          </li>
+
+          <!-- Projects Dropdown (顶层不可点击，href="#") -->
+          <li class="dropdown">
+            <a href="#">
+              Projects <span class="arrow">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/project/personal/personalProject.html">Personal</a></li>
+              <li><a href="/project/school/schoolProject.html">School</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main 主体部分：About Me 页面（F-pattern 布局） -->
+  <main>
+    <!-- 模块1：图片在左，文字在右（浅黄背景） -->
+    <section class="module module1">
+      <div class="image-container">
+        <img src="/images/aboutme-chunk1.JPG" alt="Personal picture.">
+      </div>
+      <div class="text-container">
+        <h2>Who am I?</h2>
+        <p>
+          I'm Zihan Xu, a Computer Science student at the University of Wisconsin-Madison. My passion for software 
+          development and problem-solving drives me to explore advanced technologies and creative solutions.
+        </p>
+      </div>
+    </section>
+    
+    <!-- 模块2：文字在左，图片在右（白色背景） -->
+    <section class="module module2">
+      <div class="text-container">
+        <h2>How I Stay Active?</h2>
+        <p>
+          Balancing technology with an active lifestyle keeps me energized. I love playing badminton, which 
+          sharpens my strategic thinking and quick decision-making—skills that translate into tackling 
+          challenging coding problems.
+        </p>
+      </div>
+      <div class="image-container">
+        <img src="/images/aboutme-chunk4.JPG" alt="Playing badminton.">
+      </div>
+    </section>
+    
+    <!-- 模块3：图片在左，文字在右（浅黄背景） -->
+    <section class="module module3">
+      <div class="image-container">
+        <img src="/images/aboutme-chunk3.JPG" alt="Picture with my cat.">
+      </div>
+      <div class="text-container">
+        <h2>The Things I Love</h2>
+        <p>
+          When I'm not coding, I cherish the simple moments—like spending time with my cat. This experience has 
+          taught me patience and responsibility, qualities that enrich both my personal life and my teamwork 
+          in software development.
+        </p>
+      </div>
+    </section>
+    
+    <!-- 模块4：文字在左，图片在右（白色背景） -->
+    <section class="module module4">
+      <div class="text-container">
+        <h2>How I Challenge Myself?</h2>
+        <p>
+          Whether it's tackling a steep slope while skiing or debugging a complex algorithm, I thrive on challenges. 
+          Each challenge motivates me to innovate and improve my skills, both on the slopes and in the code.
+        </p>
+      </div>
+      <div class="image-container">
+        <img src="/images/aboutme-chunk2.JPG" alt="Skiing picture.">
+      </div>
+    </section>
+
+    <!-- 新增：描述列表（description list）以满足PDF要求 -->
+    <section class="info-section" style="margin: 40px auto; text-align: center;">
+      <h2>More About Me</h2>
+      <dl style="display: inline-block; text-align: left; margin-top: 20px;">
+        <dt style="font-weight: bold;">Hobby</dt>
+        <dd>Badminton, Skiing, and spending time with my cat.</dd>
+        <dt style="font-weight: bold; margin-top: 10px;">Goal</dt>
+        <dd>Become a well-rounded software developer, mastering both front-end and back-end aspects.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <!-- Footer 页脚 -->
+  <footer>
+    <p>&copy; 2025 Zihan Xu. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School Projects | Zihan Xu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Common CSS (header, navigation, etc.) -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- School Projects specific CSS -->
+  <link rel="stylesheet" href="/styles/schoolProject.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-9NyQT4/6nO7rx1ge6iPYMXYQwhpOLj/Qnl/3N8DihVa0QCO5p1dJmU2B5nJjtRzE7PeItLBpC9cTx6S3b3XNCw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Header (same as other pages) -->
+  <header>
+    <div class="header-content">
+      <div class="logo-and-name">
+        <div class="logo">
+          <img src="/images/index-logo.jpg" alt="My Logo">
+        </div>
+        <div class="name">Zihan Xu</div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <!-- Home -->
+          <li><a href="/index.html">Home</a></li>
+  
+          <!-- About Me -->
+          <li><a href="/aboutme/aboutme.html">About Me</a></li>
+  
+          <!-- Contact -->
+          <li><a href="/contact/contact.html">Contact</a></li>
+  
+          <!-- Experience Dropdown (顶层不可点击，href="#") -->
+          <li class="dropdown">
+            <a href="#">
+              Experience <span class="arrow">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/experience/internship/internship.html">Internship</a></li>
+              <li><a href="/experience/research/research.html">Research</a></li>
+            </ul>
+          </li>
+  
+          <!-- Projects Dropdown (顶层不可点击，href="#") -->
+          <li class="dropdown">
+            <a href="#">
+              Projects <span class="arrow">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/project/personal/personalProject.html">Personal</a></li>
+              <li><a href="/project/school/schoolProject.html">School</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <section class="projects-section">
+      <h2>School Projects</h2>
+      <p class="intro-text">
+        Below are some school-related projects that highlight my skills in data structures, 
+        AI, systems programming, and more.
+      </p>
+
+      <div class="project-grid">
+        <!-- Card 1: Machine Organization & Programming -->
+        <div class="project-card">
+          <h3>Machine Organization &amp; Programming</h3>
+          <span class="date-range">2024 Spring</span>
+          <ul>
+            <li>Implemented a heap structure, memory allocation, and free function using the best-fit policy in C.</li>
+            <li>Developed a simulated cache with a restricted replacement policy, demonstrating low-level memory management skills.</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Data Structure - Game Design -->
+        <div class="project-card">
+          <h3>Data Structure: Game Design</h3>
+          <span class="date-range">2023 Spring / 2023 Fall</span>
+          <ul>
+            <li>Built an interactive Java game (Processing library), allowing players to interact with badgers on a basketball court.</li>
+            <li>Implemented an AI for the strategic board game Teeko in Python, showcasing fundamental AI techniques.</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: Song Searcher (Backend) -->
+        <div class="project-card">
+          <h3>Song Searcher (Backend)</h3>
+          <span class="date-range">2023 Fall</span>
+          <ul>
+            <li>Created functionality for listing songs based on danceability score.</li>
+            <li>Managed data with a Red-Black Tree for quick insertion and retrieval.</li>
+          </ul>
+        </div>
+
+        <!-- Card 4: Social Track (Frontend) -->
+        <div class="project-card">
+          <h3>Social Track (Frontend)</h3>
+          <span class="date-range">2023 Fall</span>
+          <ul>
+            <li>Developed frontend features enabling users to find the shortest path in a social network.</li>
+            <li>Utilized Dijkstra’s algorithm to navigate participant/friendship graphs efficiently.</li>
+          </ul>
+        </div>
+
+        <!-- Card 5: NLP Project -->
+        <div class="project-card">
+          <h3>Natural Language Processing</h3>
+          <span class="date-range">2023 Fall</span>
+          <ul>
+            <li>Applied sentiment analysis, text classification, or machine translation in advanced NLP tasks.</li>
+            <li>Enhanced language processing technologies using cutting-edge NLP algorithms.</li>
+          </ul>
+        </div>
+
+        <!-- Card 6: Machine Learning Projects -->
+        <div class="project-card">
+          <h3>Machine Learning Projects</h3>
+          <span class="date-range">2023 Fall</span>
+          <ul>
+            <li>Unsupervised Learning (cluster analysis, anomaly detection).</li>
+            <li>Predictive modeling (Linear Regression, KNN, Naive Bayes) &amp; deep learning (NNs).</li>
+            <li>Hands-on experience in image/text recognition with advanced ML frameworks.</li>
+          </ul>
+        </div>
+
+        <!-- Card 7: Reinforcement Learning -->
+        <div class="project-card">
+          <h3>Reinforcement Learning</h3>
+          <span class="date-range">2023 Fall</span>
+          <ul>
+            <li>Implemented RL algorithms for gameplay or robotic navigation tasks.</li>
+            <li>Explored adaptive learning systems with real-time environmental feedback.</li>
+          </ul>
+        </div>
+
+        <!-- Card 8: Medical Image -->
+        <div class="project-card">
+          <h3>Medical Image</h3>
+          <span class="date-range">2024 Fall</span>
+          <ul>
+            <li>Studied biomedical image representations, filtering, and enhancement techniques.</li>
+            <li>Applied KNN and LDA for medical image classification with cross-validation strategies.</li>
+          </ul>
+        </div>
+
+        <!-- Card 9: User Interface Development -->
+        <div class="project-card">
+          <h3>User Interface Development</h3>
+          <span class="date-range">Ongoing</span>
+          <ul>
+            <li>Explored event-driven, direct manipulation, and dialogue-based UI paradigms.</li>
+            <li>Developed web, mobile, and voice UIs using HTML/CSS/JS, React, React Native, etc.</li>
+            <li>Built a UI portfolio emphasizing user-centered design and iterative prototyping.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 在页面底部统一提供 GitHub 链接 -->
+      <div class="github-section">
+        <p>
+          For more details on these projects and additional code samples, please visit my GitHub:
+          <a href="https://github.com/nonoghs" target="_blank">github.com/nonoghs</a>
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zihan Xu. All rights reserved.</p>
+  </footer>
+</body>
+</html>

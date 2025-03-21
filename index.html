@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>My Portfolio | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 引入外部 CSS 文件 -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- 引入 Font Awesome 图标库 -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-9NyQT4/6nO7rx1ge6iPYMXYQwhpOLj/Qnl/3N8DihVa0QCO5p1dJmU2B5nJjtRzE7PeItLBpC9cTx6S3b3XNCw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
 </head>
 <body>
-    <p>Hello world!</p>
-    <p>My name is Zihan Xu</p>
+  <!-- Header 区域 -->
+  <header>
+    <div class="header-content">
+      <div class="logo-and-name">
+        <div class="logo">
+          <img src="/images/index-logo.jpg" alt="My Logo">
+        </div>
+        <div class="name">Zihan Xu</div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <!-- Home -->
+          <li><a href="/index.html">Home</a></li>
+  
+          <!-- About Me -->
+          <li><a href="/aboutme/aboutme.html">About Me</a></li>
+  
+          <!-- Contact -->
+          <li><a href="/contact/contact.html">Contact</a></li>
+  
+          <!-- Experience Dropdown (顶层不可点击，href="#") -->
+          <li class="dropdown">
+            <a href="#">
+              Experience <span class="arrow">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/experience/internship/internship.html">Internship</a></li>
+              <li><a href="/experience/research/research.html">Research</a></li>
+            </ul>
+          </li>
+  
+          <!-- Projects Dropdown (顶层不可点击，href="#") -->
+          <li class="dropdown">
+            <a href="#">
+              Projects <span class="arrow">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/project/personal/personalProject.html">Personal</a></li>
+              <li><a href="/project/school/schoolProject.html">School</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main 主体部分 -->
+  <main>
+    <!-- 第一部分：全宽淡黄色背景，内部分左右布局 -->
+    <section class="intro-section">
+      <div class="intro-content">
+        <!-- 左侧：大圆形照片区域 -->
+        <div class="intro-photo">
+          <img src="/images/index-chunk1.JPG" alt="My Photo">
+        </div>
+        <!-- 右侧：介绍文字 -->
+        <div class="intro-text">
+          <h2>When I can’t sleep, I don’t count sheep or stars; I count the mistakes I made.</h2>
+          <p>
+            <cite class="indented-cite">
+              --For my four year college life.
+            </cite>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- 可根据需要继续添加其它内容 -->
+  </main>
+
+  <!-- Footer 页脚 -->
+  <footer>
+    <p>&copy; 2025 Zihan Xu. All rights reserved.</p>
+  </footer>
 </body>
 </html>
