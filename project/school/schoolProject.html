@@ -5,9 +5,10 @@
   <title>School Projects | Zihan Xu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Common CSS (header, navigation, etc.) -->
-  <link rel="stylesheet" href="/styles/main.css">
+  <!-- 回退两层到 styles/ => ../../styles/main.css -->
+  <link rel="stylesheet" href="../../styles/main.css">
   <!-- School Projects specific CSS -->
-  <link rel="stylesheet" href="/styles/schoolProject.css">
+  <link rel="stylesheet" href="../../styles/schoolProject.css">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -21,40 +22,43 @@
     <div class="header-content">
       <div class="logo-and-name">
         <div class="logo">
-          <img src="/images/index-logo.jpg" alt="My Logo">
+          <!-- Logo => ../../images/index-logo.jpg -->
+          <img src="../../images/index-logo.jpg" alt="My Logo">
         </div>
         <div class="name">Zihan Xu</div>
       </div>
       <nav class="main-nav">
         <ul>
-          <!-- Home -->
-          <li><a href="/index.html">Home</a></li>
+          <!-- Home => ../../index.html -->
+          <li><a href="../../index.html">Home</a></li>
   
-          <!-- About Me -->
-          <li><a href="/aboutme/aboutme.html">About Me</a></li>
+          <!-- About Me => ../../aboutme/aboutme.html -->
+          <li><a href="../../aboutme/aboutme.html">About Me</a></li>
   
-          <!-- Contact -->
-          <li><a href="/contact/contact.html">Contact</a></li>
+          <!-- Contact => ../../contact/contact.html -->
+          <li><a href="../../contact/contact.html">Contact</a></li>
   
-          <!-- Experience Dropdown (顶层不可点击，href="#") -->
+          <!-- Experience 下拉 -->
           <li class="dropdown">
             <a href="#">
               Experience <span class="arrow">&#9662;</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="/experience/internship/internship.html">Internship</a></li>
-              <li><a href="/experience/research/research.html">Research</a></li>
+              <li><a href="../../experience/internship/internship.html">Internship</a></li>
+              <li><a href="../../experience/research/research.html">Research</a></li>
             </ul>
           </li>
   
-          <!-- Projects Dropdown (顶层不可点击，href="#") -->
+          <!-- Projects 下拉 -->
           <li class="dropdown">
             <a href="#">
               Projects <span class="arrow">&#9662;</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="/project/personal/personalProject.html">Personal</a></li>
-              <li><a href="/project/school/schoolProject.html">School</a></li>
+              <!-- personal => ../personal/personalProject.html (回退一层到 project/ 再进 personal/) -->
+              <li><a href="../personal/personalProject.html">Personal</a></li>
+              <!-- school => 当前页面 -->
+              <li><a href="schoolProject.html">School</a></li>
             </ul>
           </li>
         </ul>
@@ -88,7 +92,7 @@
           <span class="date-range">2023 Spring / 2023 Fall</span>
           <ul>
             <li>Built an interactive Java game (Processing library), allowing players to interact with badgers on a basketball court.</li>
-            <li>Implemented an AI for the strategic board game Teeko in Python, showcasing fundamental AI techniques.</li>
+            <li>Implemented an AI for the strategic board game Teeko in Python.</li>
           </ul>
         </div>
 
@@ -128,7 +132,7 @@
           <span class="date-range">2023 Fall</span>
           <ul>
             <li>Unsupervised Learning (cluster analysis, anomaly detection).</li>
-            <li>Predictive modeling (Linear Regression, KNN, Naive Bayes) &amp; deep learning (NNs).</li>
+            <li>Predictive modeling (Linear Regression, KNN, Naive Bayes) & deep learning (NNs).</li>
             <li>Hands-on experience in image/text recognition with advanced ML frameworks.</li>
           </ul>
         </div>

@@ -5,9 +5,9 @@
   <title>Research | Zihan Xu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- 引入通用 CSS 文件（Header、导航等） -->
-  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="../../styles/main.css"> <!-- 回退两层到 styles -->
   <!-- Research 专用 CSS -->
-  <link rel="stylesheet" href="/styles/research.css">
+  <link rel="stylesheet" href="../../styles/research.css">
   <!-- Font Awesome 图标库 -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -21,40 +21,41 @@
     <div class="header-content">
       <div class="logo-and-name">
         <div class="logo">
-          <img src="/images/index-logo.jpg" alt="My Logo">
+          <!-- logo => ../../images/index-logo.jpg -->
+          <img src="../../images/index-logo.jpg" alt="My Logo">
         </div>
         <div class="name">Zihan Xu</div>
       </div>
       <nav class="main-nav">
         <ul>
           <!-- Home -->
-          <li><a href="/index.html">Home</a></li>
-  
+          <li><a href="../../index.html">Home</a></li>
+
           <!-- About Me -->
-          <li><a href="/aboutme/aboutme.html">About Me</a></li>
-  
+          <li><a href="../../aboutme/aboutme.html">About Me</a></li>
+
           <!-- Contact -->
-          <li><a href="/contact/contact.html">Contact</a></li>
-  
+          <li><a href="../../contact/contact.html">Contact</a></li>
+
           <!-- Experience Dropdown (顶层不可点击，href="#") -->
           <li class="dropdown">
             <a href="#">
               Experience <span class="arrow">&#9662;</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="/experience/internship/internship.html">Internship</a></li>
-              <li><a href="/experience/research/research.html">Research</a></li>
+              <li><a href="../internship/internship.html">Internship</a></li>
+              <li><a href="research.html">Research</a></li>
             </ul>
           </li>
-  
+
           <!-- Projects Dropdown (顶层不可点击，href="#") -->
           <li class="dropdown">
             <a href="#">
               Projects <span class="arrow">&#9662;</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="/project/personal/personalProject.html">Personal</a></li>
-              <li><a href="/project/school/schoolProject.html">School</a></li>
+              <li><a href="../../project/personal/personalProject.html">Personal</a></li>
+              <li><a href="../../project/school/schoolProject.html">School</a></li>
             </ul>
           </li>
         </ul>
@@ -82,26 +83,22 @@
         <h3><i class="fa-solid fa-bullseye"></i> Purpose</h3>
         <p>
           Improve live multimedia streaming by creating a hybrid push-pull system that forms an 
-          overlay network using Fibonacci Heaps. Nodes are grouped based on distance from the source 
-          and upload capacity, and the network restructures dynamically to minimize latency and 
-          maximize bandwidth utilization.
+          overlay network using Fibonacci Heaps...
         </p>
       </div>
 
       <div class="research-card">
         <h3><i class="fa-solid fa-triangle-exclamation"></i> Problem</h3>
         <p>
-          Legacy tree/mesh approaches suffer from high latency or underutilized bandwidth, 
-          especially with unpredictable churn (users leaving/arriving) and fluctuating network 
-          conditions.
+          Legacy tree/mesh approaches suffer from high latency or underutilized bandwidth...
         </p>
       </div>
 
       <div class="research-card">
         <h3><i class="fa-solid fa-lightbulb"></i> Proposed Solution</h3>
         <ul>
-          <li>Fibonacci Heaps based overlay network that reorganizes in response to latency/bandwidth changes.</li>
-          <li>Leaf nodes effectively utilized, reducing “freeloaders.”</li>
+          <li>Fibonacci Heaps based overlay network reorganizes in response to latency/bandwidth changes.</li>
+          <li>Leaf nodes effectively utilized, reducing freeloaders.</li>
           <li>Minimizes latency and ensures near-optimal bandwidth usage.</li>
         </ul>
       </div>
@@ -111,33 +108,32 @@
         <ul>
           <li>Reduced latency with bounded delivery delay.</li>
           <li>Dynamic adaptability under changing conditions.</li>
-          <li>Better bandwidth usage than tree or mesh approaches.</li>
-          <li>Scales well, handling up to 1 million nodes in simulations.</li>
+          <li>Scales to 1 million nodes in simulations.</li>
         </ul>
       </div>
 
       <div class="research-card">
-        <h3><i class="fa-solid fa-flask-vial"></i> Implementation & Evaluation</h3>
+        <h3><i class="fa-solid fa-flask-vial"></i> Implementation &amp; Evaluation</h3>
         <ul>
-          <li>Simulations demonstrate robust performance under churn.</li>
-          <li>Near-optimal bandwidth usage and low latency in large-scale tests.</li>
-          <li>Outperforms standard tree and mesh in delay and upload efficiency metrics.</li>
+          <li>Simulations show robust performance under churn.</li>
+          <li>Near-optimal bandwidth usage in large-scale tests.</li>
+          <li>Outperforms standard tree and mesh in delay/upload efficiency.</li>
         </ul>
       </div>
 
-
-        <div class="certificate-card">
-            <h3><i class="fa-solid fa-certificate"></i> Certificate</h3>
-            <p>
-            This research experience was part of the 2024 Summer GEARS Program at 
-            North Carolina State University.
-            </p>
-            <p>
-            <a href="/docs/2024 Summer GEARS Online Certificate- Zihan Xu.pdf" target="_blank">
-                <i class="fa-solid fa-file-pdf"></i> View Certificate
-            </a>
-            </p>
-        </div>
+      <div class="certificate-card">
+        <h3><i class="fa-solid fa-certificate"></i> Certificate</h3>
+        <p>
+          This research experience was part of the 2024 Summer GEARS Program at 
+          North Carolina State University.
+        </p>
+        <p>
+          <!-- pdf 如果在 docs/ 下, 需要回退两层 => ../../docs/... -->
+          <a href="../../docs/2024%20Summer%20GEARS%20Online%20Certificate-%20Zihan%20Xu.pdf" target="_blank">
+            <i class="fa-solid fa-file-pdf"></i> View Certificate
+          </a>
+        </p>
+      </div>
 
     </section>
   </main>

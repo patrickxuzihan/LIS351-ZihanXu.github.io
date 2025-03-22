@@ -5,9 +5,10 @@
   <title>About Me | Zihan Xu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- 引入通用 CSS 文件（Header、导航等） -->
-  <link rel="stylesheet" href="/styles/main.css">
+  <!-- 注意：aboutme.html 在 aboutme/ 文件夹下，需要用 ../styles/main.css -->
+  <link rel="stylesheet" href="../styles/main.css">
   <!-- 引入 About Me 专用 CSS 文件（用于 Z-pattern 布局） -->
-  <link rel="stylesheet" href="/styles/aboutme.css">
+  <link rel="stylesheet" href="../styles/aboutme.css">
   <!-- 引入 Font Awesome 图标库 -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -21,40 +22,43 @@
     <div class="header-content">
       <div class="logo-and-name">
         <div class="logo">
-          <img src="/images/index-logo.jpg" alt="My Logo">
+          <!-- logo 是在 images/ 里，上一级目录 ../images/ -->
+          <img src="../images/index-logo.jpg" alt="My Logo">
         </div>
         <div class="name">Zihan Xu</div>
       </div>
       <nav class="main-nav">
         <ul>
-          <!-- Home -->
-          <li><a href="/index.html">Home</a></li>
+          <!-- Home (上一级目录) -->
+          <li><a href="../index.html">Home</a></li>
 
-          <!-- About Me -->
-          <li><a href="/aboutme/aboutme.html">About Me</a></li>
+          <!-- About Me (当前页面) -->
+          <li><a href="aboutme.html">About Me</a></li>
 
-          <!-- Contact -->
-          <li><a href="/contact/contact.html">Contact</a></li>
+          <!-- Contact (同级 ../ 下面的 contact/...) -->
+          <li><a href="../contact/contact.html">Contact</a></li>
 
-          <!-- Experience Dropdown (顶层不可点击，href="#") -->
+          <!-- Experience Dropdown (顶层不可点击) -->
           <li class="dropdown">
             <a href="#">
               Experience <span class="arrow">&#9662;</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="/experience/internship/internship.html">Internship</a></li>
-              <li><a href="/experience/research/research.html">Research</a></li>
+              <!-- internship、research 都在 ../experience/...  -->
+              <li><a href="../experience/internship/internship.html">Internship</a></li>
+              <li><a href="../experience/research/research.html">Research</a></li>
             </ul>
           </li>
 
-          <!-- Projects Dropdown (顶层不可点击，href="#") -->
+          <!-- Projects Dropdown -->
           <li class="dropdown">
             <a href="#">
               Projects <span class="arrow">&#9662;</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="/project/personal/personalProject.html">Personal</a></li>
-              <li><a href="/project/school/schoolProject.html">School</a></li>
+              <!-- personalProject & schoolProject 在 ../project/personal & ../project/school -->
+              <li><a href="../project/personal/personalProject.html">Personal</a></li>
+              <li><a href="../project/school/schoolProject.html">School</a></li>
             </ul>
           </li>
         </ul>
@@ -67,7 +71,8 @@
     <!-- 模块1：图片在左，文字在右（浅黄背景） -->
     <section class="module module1">
       <div class="image-container">
-        <img src="/images/aboutme-chunk1.JPG" alt="Personal picture.">
+        <!-- aboutme-chunk1.JPG 同理放在 ../images/ 下 -->
+        <img src="../images/aboutme-chunk1.JPG" alt="Personal picture.">
       </div>
       <div class="text-container">
         <h2>Who am I?</h2>
@@ -89,14 +94,14 @@
         </p>
       </div>
       <div class="image-container">
-        <img src="/images/aboutme-chunk4.JPG" alt="Playing badminton.">
+        <img src="../images/aboutme-chunk4.JPG" alt="Playing badminton.">
       </div>
     </section>
     
     <!-- 模块3：图片在左，文字在右（浅黄背景） -->
     <section class="module module3">
       <div class="image-container">
-        <img src="/images/aboutme-chunk3.JPG" alt="Picture with my cat.">
+        <img src="../images/aboutme-chunk3.JPG" alt="Picture with my cat.">
       </div>
       <div class="text-container">
         <h2>The Things I Love</h2>
@@ -118,11 +123,11 @@
         </p>
       </div>
       <div class="image-container">
-        <img src="/images/aboutme-chunk2.JPG" alt="Skiing picture.">
+        <img src="../images/aboutme-chunk2.JPG" alt="Skiing picture.">
       </div>
     </section>
 
-    <!-- 新增：描述列表（description list）以满足PDF要求 -->
+    <!-- 新增：描述列表（description list） -->
     <section class="info-section" style="margin: 40px auto; text-align: center;">
       <h2>More About Me</h2>
       <dl style="display: inline-block; text-align: left; margin-top: 20px;">

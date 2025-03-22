@@ -5,9 +5,10 @@
   <title>Personal Projects | Zihan Xu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Common CSS (header, navigation, etc.) -->
-  <link rel="stylesheet" href="/styles/main.css">
+  <!-- 注意：在 project/personal 文件夹中，需要回退两层以找到 styles/ -->
+  <link rel="stylesheet" href="../../styles/main.css">
   <!-- Personal Projects specific CSS -->
-  <link rel="stylesheet" href="/styles/personalProject.css">
+  <link rel="stylesheet" href="../../styles/personalProject.css">
   <!-- Font Awesome for icons (optional) -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -21,40 +22,45 @@
     <div class="header-content">
       <div class="logo-and-name">
         <div class="logo">
-          <img src="/images/index-logo.jpg" alt="My Logo">
+          <!-- Logo 放在 images 下，需要回退两层 => ../../images/index-logo.jpg -->
+          <img src="../../images/index-logo.jpg" alt="My Logo">
         </div>
         <div class="name">Zihan Xu</div>
       </div>
       <nav class="main-nav">
         <ul>
-          <!-- Home -->
-          <li><a href="/index.html">Home</a></li>
+          <!-- Home => 回退两层到根目录 index.html -->
+          <li><a href="../../index.html">Home</a></li>
   
-          <!-- About Me -->
-          <li><a href="/aboutme/aboutme.html">About Me</a></li>
+          <!-- About Me => ../../aboutme/aboutme.html -->
+          <li><a href="../../aboutme/aboutme.html">About Me</a></li>
   
-          <!-- Contact -->
-          <li><a href="/contact/contact.html">Contact</a></li>
+          <!-- Contact => ../../contact/contact.html -->
+          <li><a href="../../contact/contact.html">Contact</a></li>
   
-          <!-- Experience Dropdown (顶层不可点击，href="#") -->
+          <!-- Experience 下拉 -->
           <li class="dropdown">
             <a href="#">
               Experience <span class="arrow">&#9662;</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="/experience/internship/internship.html">Internship</a></li>
-              <li><a href="/experience/research/research.html">Research</a></li>
+              <!-- internship => ../../experience/internship/internship.html -->
+              <li><a href="../../experience/internship/internship.html">Internship</a></li>
+              <!-- research => ../../experience/research/research.html -->
+              <li><a href="../../experience/research/research.html">Research</a></li>
             </ul>
           </li>
   
-          <!-- Projects Dropdown (顶层不可点击，href="#") -->
+          <!-- Projects 下拉 -->
           <li class="dropdown">
             <a href="#">
               Projects <span class="arrow">&#9662;</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="/project/personal/personalProject.html">Personal</a></li>
-              <li><a href="/project/school/schoolProject.html">School</a></li>
+              <!-- personal => 本页面 -->
+              <li><a href="personalProject.html">Personal</a></li>
+              <!-- school => ../school/schoolProject.html -->
+              <li><a href="../school/schoolProject.html">School</a></li>
             </ul>
           </li>
         </ul>

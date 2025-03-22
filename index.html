@@ -5,8 +5,9 @@
   <title>My Portfolio | Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- 引入外部 CSS 文件 -->
-  <link rel="stylesheet" href="/styles/main.css">
-  <!-- 引入 Font Awesome 图标库 -->
+  <!-- 相对路径：当前 index.html 与 styles/ 在同级，所以直接写 styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- 引入 Font Awesome 图标库 (CDN) -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-9NyQT4/6nO7rx1ge6iPYMXYQwhpOLj/Qnl/3N8DihVa0QCO5p1dJmU2B5nJjtRzE7PeItLBpC9cTx6S3b3XNCw=="
@@ -19,20 +20,21 @@
     <div class="header-content">
       <div class="logo-and-name">
         <div class="logo">
-          <img src="/images/index-logo.jpg" alt="My Logo">
+          <!-- 相对路径：images/ 与 index.html 同级 -->
+          <img src="images/index-logo.jpg" alt="My Logo">
         </div>
         <div class="name">Zihan Xu</div>
       </div>
       <nav class="main-nav">
         <ul>
-          <!-- Home -->
-          <li><a href="/index.html">Home</a></li>
+          <!-- Home (当前页面) -->
+          <li><a href="index.html">Home</a></li>
   
-          <!-- About Me -->
-          <li><a href="/aboutme/aboutme.html">About Me</a></li>
+          <!-- About Me (在 aboutme/ 文件夹下) -->
+          <li><a href="aboutme/aboutme.html">About Me</a></li>
   
-          <!-- Contact -->
-          <li><a href="/contact/contact.html">Contact</a></li>
+          <!-- Contact (在 contact/ 文件夹下) -->
+          <li><a href="contact/contact.html">Contact</a></li>
   
           <!-- Experience Dropdown (顶层不可点击，href="#") -->
           <li class="dropdown">
@@ -40,8 +42,9 @@
               Experience <span class="arrow">&#9662;</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="/experience/internship/internship.html">Internship</a></li>
-              <li><a href="/experience/research/research.html">Research</a></li>
+              <!-- internship, research 都在 experience/ 子文件夹下 -->
+              <li><a href="experience/internship/internship.html">Internship</a></li>
+              <li><a href="experience/research/research.html">Research</a></li>
             </ul>
           </li>
   
@@ -51,8 +54,9 @@
               Projects <span class="arrow">&#9662;</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="/project/personal/personalProject.html">Personal</a></li>
-              <li><a href="/project/school/schoolProject.html">School</a></li>
+              <!-- personalProject 和 schoolProject 在 project/personal & project/school 下 -->
+              <li><a href="project/personal/personalProject.html">Personal</a></li>
+              <li><a href="project/school/schoolProject.html">School</a></li>
             </ul>
           </li>
         </ul>
@@ -66,8 +70,9 @@
     <section class="intro-section">
       <div class="intro-content">
         <!-- 左侧：大圆形照片区域 -->
+        <!-- index-chunk1.JPG 也在 images/ 下 -->
         <div class="intro-photo">
-          <img src="/images/index-chunk1.JPG" alt="My Photo">
+          <img src="images/index-chunk1.JPG" alt="My Photo">
         </div>
         <!-- 右侧：介绍文字 -->
         <div class="intro-text">
